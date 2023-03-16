@@ -1,17 +1,12 @@
+import time
+
 import mysql.connector
 import pandas as pd
-import requests
-from datetime import datetime, timezone
+import regex as re
 from bs4 import BeautifulSoup
-import os
-import selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-import time
-import regex as re
-from selenium.common.exceptions import ElementClickInterceptedException
 
 mydb = mysql.connector.connect(
   host="localhost",
