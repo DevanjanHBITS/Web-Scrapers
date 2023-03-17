@@ -40,7 +40,7 @@ def PlantaDoce(SearchWord):
         month = ArticleDate.month
         year = ArticleDate.year
         time=Date[1]
-        vals=(Title, TitleSummary, TitleURL, day, month, year, time)
+        vals=(Title, TitleSummary, TitleURL, day, month, year, time,'PlantaDoce')
         print(vals)
         ArticlesList.append(vals)
 
